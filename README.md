@@ -2,7 +2,7 @@
 
 **Bipartite Graph Reasoning GANs for Person Image Generation (Coming Soon!)**  
 [Hao Tang](http://disi.unitn.it/~hao.tang/), [Song Bai](http://songbai.site/), [Philip H.S. Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en).
-<br>In [BMVC 2020](https://bmvc2020.github.io/).
+<br>In [BMVC 2020](https://bmvc2020.github.io/) Oral.
 
 ## Motivation
 <img src='./imgs/motivation.jpg' width=1200>
