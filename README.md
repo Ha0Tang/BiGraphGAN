@@ -45,7 +45,7 @@ This code requires PyTorch 1.0 and python 3.6+. Please install the following dep
 * tqdm
 * dominate
 
-To reproduce the results reported in the paper, you need to run experiments on V100 with 32G memory.
+To reproduce the results reported in the paper, you need to run experiments on V100 GPU with 32G memory.
 
 ## Dataset Preparation
 
