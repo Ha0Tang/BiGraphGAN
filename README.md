@@ -52,6 +52,7 @@ To reproduce the results reported in the paper, you need to run experiments on V
 Please follow [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN/tree/master/person_transfer#data-preperation) to prepare both Market-1501 and DeepFashion datasets.
 
 ## Generating Images Using Pretrained Model
+Coming Soon!!!
 
 ## Train/Test New Models
 For Market-1501:
