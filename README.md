@@ -1,13 +1,15 @@
 ## BiGraphGAN
 
 **Bipartite Graph Reasoning GANs for Person Image Generation (Coming Soon!)**  
-[Hao Tang](http://disi.unitn.it/~hao.tang/), [Song Bai](http://songbai.site/), [Philip H.S. Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en).
-<br>In [BMVC 2020](https://bmvc2020.github.io/) Oral.
+[Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>12</sup>, [Song Bai](http://songbai.site/)<sup>2</sup>, [Philip H.S. Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en)<sup>2</sup>, [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>13</sup>. <br> 
+<sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Huawei Research Ireland, Ireland.<br>
+In [BMVC 2020](https://bmvc2020.github.io/) **Oral**. <br>
+The repository offers the official implementation of our paper in PyTorch. The code is written by [Hao Tang](https://github.com/Ha0Tang).
 
-## Motivation
+### Motivation
 <img src='./imgs/motivation.jpg' width=1200>
 
-## Results
+### Results
 
 <img src='./imgs/market_results.jpg' width=1200>
 
@@ -15,11 +17,79 @@
 
 <img src='./imgs/fashion_results.jpg' width=1200>
 
+### [License](./LICENSE.md)
+
+Copyright (C) 2019 University of Trento, Italy.
+
+All rights reserved.
+Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
+
+The code is released for academic research use only. For commercial use, please contact [hao.tang@unitn.it](hao.tang@unitn.it).
+
+## Installation
+
+Clone this repo.
+```bash
+git clone https://github.com/Ha0Tang/BiGraphGAN
+cd BiGraphGAN/
+```
+
+This code requires PyTorch 1.0 and python 3.6+. Please install dependencies by
+```bash
+pip install -r requirements.txt (for pip users)
+```
+
+### Detailed Requirement
+* pytorch 1.0.1
+* torchvision
+* numpy
+* scipy
+* scikit-image
+* pillow
+* pandas
+* tqdm
+* dominate
+
+To reproduce the results reported in the paper, you need to run experiments on V100 with 32G memory.
+
+## Dataset Preparation
+
+Please follow [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN/tree/master/person_transfer#data-preperation) to prepare both Market-1501 and DeepFashion datasets.
+
+## Generating Images Using Pretrained Model
+
+## Train/Test New Models
+For Market-1501:
+1. Go to the market_1501 folder. 
+2. Run `sh train_market.sh` for training.
+3. Run `sh test_market.sh` for testing.
+
+For DeepFashion:
+1. Go to the deepfashion folder. 
+2. Run `sh train_deepfashion.sh` for training.
+3. Run `sh test_deepfashion.sh` for testing.
+
+## Evaluation
+We adopt SSIM, mask-SSIM, IS, mask-IS, and PCKh for evaluation of Market-1501. SSIM, IS, PCKh for DeepFashion. Please refer to [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer) for more details.
+ 
+## Acknowledgments
+This source code is inspired by [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer) and [GloRe](https://github.com/facebookresearch/GloRe). 
+
 ## Related Projects
 **[XingGAN](https://github.com/Ha0Tang/XingGAN) | [GestureGAN](https://github.com/Ha0Tang/GestureGAN) | [C2GAN](https://github.com/Ha0Tang/C2GAN) | [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN) | [Guided-I2I-Translation-Papers](https://github.com/Ha0Tang/Guided-I2I-Translation-Papers)**
 
 ## Citation
 If you use this code for your research, please cite our papers.
+
+BiGraphGAN
+```
+@inproceedings{tang2020bipartite,
+  title={Bipartite Graph Reasoning GANs for Person Image Generation},
+  author={Tang, Hao and Bai, Song and Torr, Philip HS and Sebe, Nicu},
+  booktitle={BMVC},
+  year={2020}
+}
+```
 
 XingGAN
 ```
@@ -68,4 +138,5 @@ SelectionGAN
 }
 ```
 
-## We will release the code and pre-trained models soon. Make sure to star our repository to stay tuned.
+## Contributions
+If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
