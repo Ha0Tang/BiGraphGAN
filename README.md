@@ -66,7 +66,7 @@ For DeepFashion:
 3. Run `sh test_deepfashion.sh` for testing.
 
 ## Evaluation
-We adopt SSIM, mask-SSIM, IS, mask-IS, and PCKh for evaluation of Market-1501. SSIM, IS, PCKh for DeepFashion. Please refer to [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer) for more details.
+We adopt SSIM, mask-SSIM, IS, mask-IS, and PCKh for evaluation of Market-1501. SSIM, IS, PCKh for DeepFashion. Please refer to [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer#evaluation) for more details.
  
 ## Acknowledgments
 This source code is inspired by [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer) and [GloRe](https://github.com/facebookresearch/GloRe). 
