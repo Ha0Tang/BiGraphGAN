@@ -34,12 +34,7 @@ git clone https://github.com/Ha0Tang/BiGraphGAN
 cd BiGraphGAN/
 ```
 
-This code requires PyTorch 1.0 and python 3.6+. Please install dependencies by
-```bash
-pip install -r requirements.txt (for pip users)
-```
-
-### Detailed Requirement
+This code requires PyTorch 1.0 and python 3.6+. Please install the following dependencies:
 * pytorch 1.0.1
 * torchvision
 * numpy
