@@ -17,7 +17,7 @@ The repository offers the official implementation of our paper in PyTorch.
 ### Motivation
 <img src='./imgs/motivation.jpg' width=1200>
 
-### Results
+### Comparison Results
 
 <img src='./imgs/market_results.jpg' width=1200>
 
