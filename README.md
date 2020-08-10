@@ -65,13 +65,17 @@ Coming Soon!!!
 ## Train/Test New Models
 For Market-1501:
 1. Go to the market_1501 folder. 
-2. Run `sh train_market.sh` for training.
-3. Run `sh test_market.sh` for testing.
+2. Change several parameters in `train_market.sh`.
+3. Run `sh train_market.sh` for training.
+4. Change several parameters in `test_market.sh`.
+5. Run `sh test_market.sh` for testing.
 
 For DeepFashion:
 1. Go to the deepfashion folder. 
-2. Run `sh train_deepfashion.sh` for training.
-3. Run `sh test_deepfashion.sh` for testing.
+2. Change several parameters in `train_deepfashion.sh`.
+3. Run `sh train_deepfashion.sh` for training.
+4. Change several parameters in `test_deepfashion.sh`.
+5. Run `sh test_deepfashion.sh` for testing.
 
 ## Evaluation
 We adopt SSIM, mask-SSIM, IS, mask-IS, and PCKh for evaluation of Market-1501. SSIM, IS, PCKh for DeepFashion. Please refer to [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer#evaluation) for more details.
