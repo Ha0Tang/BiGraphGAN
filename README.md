@@ -1,6 +1,6 @@
 [![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://github.com/Ha0Tang/BiGraphGAN/blob/master/LICENSE.md)
-![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
-![Packagist](https://img.shields.io/badge/Pytorch-1.0.1-red.svg)
+![Python 3.6](https://img.shields.io/badge/python-3.6.9-green.svg)
+![Packagist](https://img.shields.io/badge/Pytorch-1.0.0-red.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/Ha0Tang/BiGraphGAN)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/Ha0Tang/BiGraphGAN/graphs/commit-activity))
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
@@ -42,8 +42,8 @@ git clone https://github.com/Ha0Tang/BiGraphGAN
 cd BiGraphGAN/
 ```
 
-This code requires PyTorch 1.0 and python 3.6+. Please install the following dependencies:
-* pytorch 1.0.1
+This code requires PyTorch 1.0.0 and python 3.6.9+. Please install the following dependencies:
+* pytorch 1.0.0
 * torchvision
 * numpy
 * scipy
