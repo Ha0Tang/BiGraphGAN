@@ -3,9 +3,9 @@ def create_model(opt):
     model = None
     print(opt.model)
 
-    if opt.model == 'PATN':
+    if opt.model == 'BiGraphGAN':
         assert opt.dataset_mode == 'keypoint'
-        from .PATN import TransferModel
+        from .BiGraphGAN import TransferModel
         model = TransferModel()
 
     else:
