@@ -60,7 +60,33 @@ To reproduce the results reported in the paper, you need to run experiments on N
 Please follow [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN/tree/master/person_transfer#data-preperation) to directly download both Market-1501 and DeepFashion datasets.
 
 ## Generating Images Using Pretrained Model
-Coming Soon!!!
+For Market-1501:
+```bash
+cd scripts/
+sh download_bigraphgan_model.sh market
+```
+Then,
+```bash
+cd ..
+cd market_1501/
+
+export CUDA_VISIBLE_DEVICES=0;
+python test.py --dataroot ./SelectionGAN/person_transfer/datasets/market_data/ --name market_pretrained --model BiGraphGAN --phase test --dataset_mode keypoint --norm batch --batchSize 1 --resize_or_crop no --gpu_ids 0 --BP_input_nc 18 --no_flip --which_model_netG Graph --checkpoints_dir ./BiGraphGAN/scripts/checkpoints --pairLst ./SelectionGAN/person_transfer/datasets/market_data/market-pairs-test.csv --which_epoch latest --results_dir ./results/ --display_id 0;
+```
+
+For DeepFashion:
+```bash
+cd scripts/
+sh download_bigraphgan_model.sh deepfashion
+```
+Then,
+```bash
+cd ..
+cd deepfashion/
+
+export CUDA_VISIBLE_DEVICES=0;
+python test.py --dataroot ./SelectionGAN/person_transfer/datasets/fashion_data/ --name deepfashion_pretrained --model BiGraphGAN --phase test --dataset_mode keypoint --norm instance --batchSize 1 --resize_or_crop no --gpu_ids 0 --BP_input_nc 18 --no_flip --which_model_netG Graph --checkpoints_dir ./BiGraphGAN/scripts/checkpoints --pairLst ./SelectionGAN/person_transfer/datasets/fashion_data/fasion-resize-pairs-test.csv --which_epoch latest --results_dir ./results --display_id 0;
+```
 
 ## Train/Test New Models
 For Market-1501:
