@@ -64,14 +64,14 @@ Coming Soon!!!
 
 ## Train/Test New Models
 For Market-1501:
-1. Go to the market_1501 folder. 
+1. Go to the [market_1501](https://github.com/Ha0Tang/BiGraphGAN/tree/master/market_1501) folder. 
 2. Change several parameters in `train_market.sh`.
 3. Run `sh train_market.sh` for training.
 4. Change several parameters in `test_market.sh`.
 5. Run `sh test_market.sh` for testing.
 
 For DeepFashion:
-1. Go to the deepfashion folder. 
+1. Go to the [deepfashion](https://github.com/Ha0Tang/BiGraphGAN/tree/master/deepfashion) folder. 
 2. Change several parameters in `train_deepfashion.sh`.
 3. Run `sh train_deepfashion.sh` for training.
 4. Change several parameters in `test_deepfashion.sh`.
