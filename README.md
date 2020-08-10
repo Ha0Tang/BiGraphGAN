@@ -78,7 +78,7 @@ For DeepFashion:
 5. Run `sh test_deepfashion.sh` for testing.
 
 ## Download Images Produced by the Authors
-**You can directly download the images produced by the authors for comparisons in your own papers!!!**
+**You can directly download the images produced by the authors for qualitative comparisons in your own papers!!!**
 
 For Market-1501:
 ```bash
