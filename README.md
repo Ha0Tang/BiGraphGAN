@@ -63,7 +63,7 @@ To reproduce the results reported in the paper, you need to run experiments on N
 Please follow [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN/tree/master/person_transfer#data-preperation) to directly download both Market-1501 and DeepFashion datasets.
 
 ## Generating Images Using Pretrained Model
-For Market-1501:
+### Market-1501
 ```bash
 cd scripts/
 sh download_bigraphgan_model.sh market
@@ -74,7 +74,7 @@ Then,
 1. Change several parameters in `test_market_pretrained.sh`.
 2. Run `sh test_market_pretrained.sh` for training.
 
-For DeepFashion:
+### DeepFashion
 ```bash
 cd scripts/
 sh download_bigraphgan_model.sh deepfashion
@@ -86,14 +86,14 @@ Then,
 2. Run `sh test_deepfashion_pretrained.sh` for training.
 
 ## Train/Test New Models
-For Market-1501:
+### Market-1501
 1. Go to the [market_1501](https://github.com/Ha0Tang/BiGraphGAN/tree/master/market_1501) folder. 
 2. Change several parameters in `train_market.sh`.
 3. Run `sh train_market.sh` for training.
 4. Change several parameters in `test_market.sh`.
 5. Run `sh test_market.sh` for testing.
 
-For DeepFashion:
+### DeepFashion
 1. Go to the [deepfashion](https://github.com/Ha0Tang/BiGraphGAN/tree/master/deepfashion) folder. 
 2. Change several parameters in `train_deepfashion.sh`.
 3. Run `sh train_deepfashion.sh` for training.
@@ -103,13 +103,13 @@ For DeepFashion:
 ## Download Images Produced by the Authors
 **You can directly download the images produced by the authors for qualitative comparisons in your own papers!!!**
 
-For Market-1501:
+### Market-1501
 ```bash
 cd scripts/
 sh download_bigraphgan_result.sh market
 ```
 
-For DeepFashion:
+### DeepFashion
 ```bash
 cd scripts/
 sh download_bigraphgan_result.sh deepfashion
