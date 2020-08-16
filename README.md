@@ -72,7 +72,7 @@ cd market_1501/
 ```
 Then,
 1. Change several parameters in `test_market_pretrained.sh`.
-2. Run `sh test_market_pretrained.sh` for training.
+2. Run `sh test_market_pretrained.sh` for testing.
 
 ### DeepFashion
 ```bash
@@ -83,7 +83,7 @@ cd deepfashion/
 ```
 Then,
 1. Change several parameters in `test_deepfashion_pretrained.sh`.
-2. Run `sh test_deepfashion_pretrained.sh` for training.
+2. Run `sh test_deepfashion_pretrained.sh` for testing.
 
 ## Train/Test New Models
 ### Market-1501
