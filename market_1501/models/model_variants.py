@@ -26,7 +26,7 @@ class GCN(nn.Module):
 
 class GloRe_Unit(nn.Module):
     """
-    Graph-based Global Reasoning Unit
+    Based on Graph-based Global Reasoning Unit
     Parameter:
         'normalize' is not necessary if the input size is fixed
     """
@@ -60,43 +60,31 @@ class GloRe_Unit(nn.Module):
         :param x: (n, c, d, h, w)
         '''
         n = x.size(0)
-        #print('x', x.size()) [32, 256, 32, 16]
         c = torch.div(x.size(1),2).item()
-        #print('c',c)
+
         x1 = x[:,:c]
         x2 = x[:,c:]
-        #print('x1',x1.size())
-        #print('x2',x2.size())
-        #x torch.Size([32, 256, 32, 16])
-        #x_state_reshaped torch.Size([32, 256, 512])
-        #x_proj_reshaped torch.Size([32, 128, 512])
-        #x_n_state torch.Size([32, 256, 128])
-        #x_n_rel torch.Size([32, 256, 128])
-        #x_state_reshaped torch.Size([32, 256, 512])
-        #x_state torch.Size([32, 256, 32, 16])
-        #out torch.Size([32, 256, 32, 16])
 
         # (n, num_in, h, w) --> (n, num_state, h, w)
         #                   --> (n, num_state, h*w)
         x_state_reshaped1 = self.conv_state(x1).view(n, self.num_s, -1)
         x_state_reshaped2 = self.conv_state(x2).view(n, self.num_s, -1)
-        #print('x_state_reshaped',x_state_reshaped.size())  [32, 256, 512]
+
         # (n, num_in, h, w) --> (n, num_node, h, w)
         #                   --> (n, num_node, h*w)
         x_proj_reshaped1 = self.conv_proj(x2).view(n, self.num_n, -1)
         x_proj_reshaped2 = self.conv_proj(x1).view(n, self.num_n, -1)
-        #print('x_proj_reshaped', x_proj_reshaped.size())  [32, 128, 512]
+
         # (n, num_in, h, w) --> (n, num_node, h, w)
         #                   --> (n, num_node, h*w)
         x_rproj_reshaped1 = x_proj_reshaped1
         x_rproj_reshaped2 = x_proj_reshaped2
-        # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
         # projection: coordinate space -> interaction space
         # (n, num_state, h*w) x (n, num_node, h*w)T --> (n, num_state, num_node)
         x_n_state1 = torch.matmul(x_state_reshaped1, x_proj_reshaped1.permute(0, 2, 1))
         x_n_state2 = torch.matmul(x_state_reshaped2, x_proj_reshaped2.permute(0, 2, 1))
-        #print('x_n_state',x_n_state.size()) [32, 256, 128]
+
         if self.normalize:
             print('using normalize')
             x_n_state1 = x_n_state1 * (1. / x_state_reshaped1.size(2))
@@ -105,24 +93,21 @@ class GloRe_Unit(nn.Module):
         # reasoning: (n, num_state, num_node) -> (n, num_state, num_node)
         x_n_rel1 = self.gcn1(x_n_state1)
         x_n_rel2 = self.gcn2(x_n_state2)
-        #print('x_n_rel',x_n_rel.size()) [32, 256, 128]
+
         # reverse projection: interaction space -> coordinate space
         # (n, num_state, num_node) x (n, num_node, h*w) --> (n, num_state, h*w)
         x_state_reshaped1 = torch.matmul(x_n_rel1, x_rproj_reshaped1)
         x_state_reshaped2 = torch.matmul(x_n_rel2, x_rproj_reshaped2)
-        #print('x_state_reshaped',x_state_reshaped.size()) [32, 256, 512]
-        # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
         # (n, num_state, h*w) --> (n, num_state, h, w)
         x_state1 = x_state_reshaped1.view(n, self.num_s, *x.size()[2:])
         x_state2 = x_state_reshaped2.view(n, self.num_s, *x.size()[2:])
-        #print('x_state',x_state.size())
-        # -----------------
+
         # (n, num_state, h, w) -> (n, num_in, h, w)
-        #out = x + self.blocker(self.conv_extend(x_state))
+        # out = x + self.blocker(self.conv_extend(x_state))
         out1 = x1 + self.blocker(self.conv_extend(x_state1))
         out2 = x2 + self.blocker(self.conv_extend(x_state2))
-        #print('out',out.size())  [32, 256, 32, 16]
+
         return torch.cat((out1, out2), 1)
 
 class GloRe_Unit_2D(GloRe_Unit):
@@ -309,9 +294,3 @@ class GraphNetwork(nn.Module):
             return nn.parallel.data_parallel(self.model, input, self.gpu_ids)
         else:
             return self.model(input)
-
-
-
-
-
-
