@@ -121,7 +121,7 @@ sh download_bigraphgan_result.sh deepfashion
 We adopt SSIM, mask-SSIM, IS, mask-IS, and PCKh for evaluation of Market-1501. SSIM, IS, PCKh for DeepFashion. Please refer to [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer#evaluation) for more details.
  
 ## Acknowledgments
-This source code is inspired by both [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer) and [GloRe](https://github.com/facebookresearch/GloRe). 
+This source code is inspired by both [Pose-Transfer](https://github.com/tengteng95/Pose-Transfer), [GloRe](https://github.com/facebookresearch/GloRe) and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
 
 ## Related Projects
 **[XingGAN](https://github.com/Ha0Tang/XingGAN) | [GestureGAN](https://github.com/Ha0Tang/GestureGAN) | [C2GAN](https://github.com/Ha0Tang/C2GAN) | [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN) | [Guided-I2I-Translation-Papers](https://github.com/Ha0Tang/Guided-I2I-Translation-Papers)**
