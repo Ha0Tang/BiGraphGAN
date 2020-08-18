@@ -44,7 +44,7 @@ The code is released for academic research use only. For commercial use, please 
   - [Installation](#Installation)
   - [Dataset Preparation](#Dataset-Preparation)
   - [Generating Images Using Pretrained Model](#Generating-Images-Using-Pretrained-Model)
-  - [Train/Test New Models](#Train/Test-New-Models)
+  - [Train/Test New Models](#Train-Test-New-Models)
   - [Download Images Produced by the Authors](#Download-Images-Produced-by-the-Authors)
   - [Evaluation](#Evaluation)
   - [Acknowledgments](#Acknowledgments)
