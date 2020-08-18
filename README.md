@@ -6,6 +6,19 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
+**Contents**
+  - [BiGraphGAN](#BiGraphGAN)
+  - [Installation](#Installation)
+  - [Dataset Preparation](#Dataset-Preparation)
+  - [Generating Images Using Pretrained Model](#Generating-Images-Using-Pretrained-Model)
+  - [Train and Test New Models](#Train-and-Test-New-Models)
+  - [Download Images Produced by the Authors](#Download-Images-Produced-by-the-Authors)
+  - [Evaluation](#Evaluation)
+  - [Acknowledgments](#Acknowledgments)
+  - [Related Projects](#Related-Projects)
+  - [Citation](#Citation)
+  - [Contributions](#Contributions)
+
 ## BiGraphGAN
 
 **[Bipartite Graph Reasoning GANs for Person Image Generation](https://arxiv.org/abs/2008.04381)**  
@@ -38,19 +51,6 @@ All rights reserved.
 Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
 
 The code is released for academic research use only. For commercial use, please contact [hao.tang@unitn.it](hao.tang@unitn.it).
-
-
-- [BiGraphGAN](#BiGraphGAN)
-  - [Installation](#Installation)
-  - [Dataset Preparation](#Dataset-Preparation)
-  - [Generating Images Using Pretrained Model](#Generating-Images-Using-Pretrained-Model)
-  - [Train and Test New Models](#Train-and-Test-New-Models)
-  - [Download Images Produced by the Authors](#Download-Images-Produced-by-the-Authors)
-  - [Evaluation](#Evaluation)
-  - [Acknowledgments](#Acknowledgments)
-  - [Related Projects](#Related-Projects)
-  - [Citation](#Citation)
-  - [Contributions](#Contributions)
 
 ## Installation
 
