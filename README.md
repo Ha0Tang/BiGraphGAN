@@ -39,6 +39,19 @@ Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-
 
 The code is released for academic research use only. For commercial use, please contact [hao.tang@unitn.it](hao.tang@unitn.it).
 
+
+- [BiGraphGAN](#BiGraphGAN)
+  - [Installation](#Installation)
+  - [Dataset Preparation](#Dataset-Preparation)
+  - [Generating Images Using Pretrained Model](#Generating-Images-Using-Pretrained-Model)
+  - [Train/Test New Models](#Train/Test-New-Models)
+  - [Download Images Produced by the Authors](#Download-Images-Produced-by-the-Authors)
+  - [Evaluation](#Evaluation)
+  - [Acknowledgments](#Acknowledgments)
+  - [Related Projects](#Related-Projects)
+  - [Citation](#Citation)
+  - [Contributions](#Contributions)
+
 ## Installation
 
 Clone this repo.
