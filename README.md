@@ -6,7 +6,7 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-**Contents**
+## Contents
   - [BiGraphGAN](#BiGraphGAN)
   - [Installation](#Installation)
   - [Dataset Preparation](#Dataset-Preparation)
