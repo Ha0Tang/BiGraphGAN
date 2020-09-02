@@ -20,8 +20,8 @@
   - [Contributions](#Contributions)
 
 ## BiGraphGAN
-
-**[Bipartite Graph Reasoning GANs for Person Image Generation](https://arxiv.org/abs/2008.04381)**  
+**| [Project](http://disi.unitn.it/~hao.tang/project/BiGraphGAN.htm) | [Paper](https://arxiv.org/abs/2008.04381) |** <br> 
+**[Bipartite Graph Reasoning GANs for Person Image Generation](https://arxiv.org/abs/2008.04381)**  <br> 
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>12</sup>, [Song Bai](http://songbai.site/)<sup>2</sup>, [Philip H.S. Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en)<sup>2</sup>, [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>13</sup>. <br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Huawei Research Ireland, Ireland.<br>
 In [BMVC 2020](https://bmvc2020.github.io/) **Oral**. <br>
