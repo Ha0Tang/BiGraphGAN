@@ -45,7 +45,7 @@ Also see our ECCV 2020 paper [XingGAN for Person Image Generation](https://githu
 
 ### [License](./LICENSE.md)
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
-Copyright (C) 2019 University of Trento, Italy.
+Copyright (C) 2020 University of Trento, Italy.
 
 All rights reserved.
 Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
