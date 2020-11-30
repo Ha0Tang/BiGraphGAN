@@ -27,7 +27,7 @@
 In [BMVC 2020](https://bmvc2020.github.io/) **Oral**. <br>
 The repository offers the official implementation of our paper in PyTorch.
 
-Also see our ECCV 2020 paper [XingGAN for Person Image Generation](https://github.com/Ha0Tang/XingGAN).
+In the meantime, check out our related ECCV 2020 paper [XingGAN for Person Image Generation](https://github.com/Ha0Tang/XingGAN)！
 
 ### Motivation
 <img src='./imgs/motivation.jpg' width=1200>
