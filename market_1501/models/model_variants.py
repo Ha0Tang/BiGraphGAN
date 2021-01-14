@@ -60,8 +60,9 @@ class GloRe_Unit(nn.Module):
         :param x: (n, c, d, h, w)
         '''
         n = x.size(0)
-        c = torch.div(x.size(1),2).item()
-
+#         c = torch.div(x.size(1),2).item()
+        c = x.size(1) // 2    
+    
         x1 = x[:,:c]
         x2 = x[:,c:]
 
