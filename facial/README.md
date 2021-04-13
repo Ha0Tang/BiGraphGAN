@@ -1,4 +1,4 @@
-<img src='https://github.com/Ha0Tang/BiGraphGAN/imgs/face_results.jpeg' width=1200>
+<img src='https://github.com/Ha0Tang/BiGraphGAN/blob/master/imgs/face_results.jpeg' width=1200>
 
 ## Installation
 
