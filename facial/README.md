@@ -1,3 +1,5 @@
+<img src='https://github.com/Ha0Tang/BiGraphGAN/tree/master/imgs/face_results.jpg' width=1200>
+
 ## Installation
 
 Clone this repo.
