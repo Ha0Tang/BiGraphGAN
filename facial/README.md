@@ -19,6 +19,8 @@ This repository uses the same dataset format as [SelectionGAN](https://github.co
 cd scripts/
 sh download_bigraphgan_model.sh facial
 ```
+Note: Please try to execute the command line a second time, if it doesn’t work the first time.
+
 Then,
 1. Change several parameters in `test_facial.sh`.
 2. Run `sh test_facial.sh` for testing.
