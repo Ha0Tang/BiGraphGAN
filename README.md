@@ -28,7 +28,7 @@
 In [BMVC 2020](https://bmvc2020.github.io/) **Oral**. <br>
 The repository offers the official implementation of our paper in PyTorch.
 
-In the meantime, check out our related ECCV 2020 paper [XingGAN for Person Image Generation](https://github.com/Ha0Tang/XingGAN)！
+In the meantime, check out our related ECCV 2020 paper [XingGAN for Person Image Generation](https://github.com/Ha0Tang/XingGAN) and ICCV 2021 paper [Intrinsic-Extrinsic Preserved GANs for Unsupervised 3D Pose Transfer](https://github.com/mikecheninoulu/Unsupervised_IEPGAN)！
 
 ### Motivation
 <img src='./imgs/motivation.jpg' width=1200>
