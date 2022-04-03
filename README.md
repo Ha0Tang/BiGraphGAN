@@ -121,9 +121,10 @@ Then,
 ## Download Images Produced by the Authors
 **For your convenience, you can directly download the images produced by the authors for qualitative comparisons in your own papers!!!**
 
-### Market-1501
+### Market-1501 (Run twice, the first time create a new folder!!!)
 ```bash
 cd scripts/
+sh download_bigraphgan_result.sh market
 sh download_bigraphgan_result.sh market
 ```
 
