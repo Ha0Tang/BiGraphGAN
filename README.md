@@ -148,6 +148,13 @@ If you use this code for your research, please cite our papers.
 
 BiGraphGAN
 ```
+@article{tang2022bipartite,
+  title={Bipartite Graph Reasoning GANs for Person Pose and Facial Image Synthesis},
+  author={Tang, Hao and Shao, Ling and Torr, Philip HS and Sebe, Nicu},
+  journal={International Journal of Computer Vision (IJCV)},
+  year={2022}
+}
+
 @inproceedings{tang2020bipartite,
   title={Bipartite Graph Reasoning GANs for Person Image Generation},
   author={Tang, Hao and Bai, Song and Torr, Philip HS and Sebe, Nicu},
@@ -204,18 +211,18 @@ C2GAN
 
 SelectionGAN
 ```
+@article{tang2022multi,
+  title={Multi-channel attention selection gans for guided image-to-image translation},
+  author={Tang, Hao and Torr, Philip HS and Sebe, Nicu},
+  journal={Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year={2022}
+}
+
 @inproceedings{tang2019multi,
   title={Multi-channel attention selection gan with cascaded semantic guidance for cross-view image translation},
   author={Tang, Hao and Xu, Dan and Sebe, Nicu and Wang, Yanzhi and Corso, Jason J and Yan, Yan},
   booktitle={CVPR},
   year={2019}
-}
-
-@article{tang2020multi,
-  title={Multi-channel attention selection gans for guided image-to-image translation},
-  author={Tang, Hao and Xu, Dan and Yan, Yan and Corso, Jason J and Torr, Philip HS and Sebe, Nicu},
-  journal={arXiv preprint arXiv:2002.01048},
-  year={2020}
 }
 ```
 
